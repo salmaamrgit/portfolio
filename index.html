@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Salma Amr | Front-End Developer Portfolio</title>
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark" data-lang="en">
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <nav class="navbar navbar-expand-lg fixed-top portfolio-navbar py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-2" href="#home">SA<span class="text-accent">.</span></a>
+      <div class="d-flex gap-2 order-lg-2">
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <button class="lang-toggle-btn" id="langToggle" aria-label="Toggle language"><span>EN</span></button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"><span
+            class="navbar-toggler-icon"></span></button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto gap-3 align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#home" data-i18n="nav-home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav-about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education" data-i18n="nav-education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav-experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="nav-skills">Skills & Languages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services" data-i18n="nav-services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing" data-i18n="nav-pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav-projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials" data-i18n="nav-testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link contact-nav-btn" href="#contact" data-i18n="nav-contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero d-flex align-items-center">
+    <div class="hero-bg-orb orb-1"></div>
+    <div class="hero-bg-orb orb-2"></div>
+    <div class="hero-bg-orb orb-3"></div>
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <div class="hero-badge" data-aos="fade-up"><span class="badge-pulse"></span><span data-i18n="hero-badge">✦
+              Front-End Developer</span></div>
+          <h1 class="display-4 fw-bold" data-aos="fade-up" data-aos-delay="100"><span data-i18n="hero-greeting">Hi,
+              I'm</span><br><span class="name-highlight">Salma Amr</span></h1>
+          <h3 class="h5 text-accent mb-4" data-aos="fade-up" data-aos-delay="150" data-i18n="hero-title">I turn complex problems into elegant, high-performance web solutions</h3>
+          <p class="hero-description mb-4 fs-6" data-aos="fade-up" data-aos-delay="200" data-i18n="hero-desc">Computer Science graduate & Front-End Engineer specializing in React, TypeScript, and modern web technologies. Currently a MERN scholar @ Digilians, building scalable applications with cutting-edge tools.</p>
+          <div class="d-flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="300">
+            <a href="#projects" class="btn btn-gradient btn-lg px-4" data-i18n="hero-btn-work">✨ View Work</a>
+            <a href="#" class="btn btn-outline-custom btn-lg px-4" id="downloadCVBtn"><i
+                class="fas fa-download me-2"></i><span data-i18n="hero-btn-contact">Download CV</span></a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <div class="hero-photo-stage" data-aos="zoom-in">
+            <div class="hero-photo-frame"><img src="images/profile.png" class="hero-profile-img" alt="Salma Amr"></div>
+            <div class="floating-tech-icons"><i class="fab fa-react"></i><i class="fab fa-js"></i><i
+                class="fab fa-python"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section-spacing">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="about-card">
+              <h3 data-i18n="about-title">What Makes Me Different</h3>
+              <div class="about-stats-grid">
+                <div class="about-stat"><span class="about-stat-num"><i class="fas fa-code"></i> 4+</span><span data-i18n="about-stat-years">Years Coding</span></div>
+                <div class="about-stat"><span class="about-stat-num"><i class="fas fa-project-diagram"></i> 15+</span><span data-i18n="about-stat-projects">Projects Done</span></div>
+                <div class="about-stat"><span class="about-stat-num"><i class="fas fa-trophy"></i> 99.7%</span><span data-i18n="about-stat-accuracy">ML Accuracy</span></div>
+              </div>
+              <div class="mt-4">
+                <div class="skill-tag" style="display: inline-flex; margin: 0.3rem;"><i class="fas fa-medal"></i> <span data-i18n="about-badge-1">Top 5% @ Digilians</span></div>
+                <div class="skill-tag" style="display: inline-flex; margin: 0.3rem;"><i class="fas fa-certificate"></i> <span data-i18n="about-badge-2">Dual Degree Graduate</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="section-label" data-i18n="about-label">About Me</div>
+            <h2 class="section-title" data-i18n="about-heading">Where Code Meets Creativity — Delivering Excellence Every Time</h2>
+            <p data-i18n="about-text-1">I'm Salma, a Computer Science graduate (Bioinformatics) from Ain Shams University & University of East London. My passion for programming started over four years ago, and since then, I've been on a mission to create web experiences that are not just functional, but truly exceptional.</p>
+            <p data-i18n="about-text-2">I specialize in building scalable, performant applications using React, TypeScript, and modern CSS frameworks. What sets me apart is my unique blend of front-end expertise and machine learning knowledge — I don't just build interfaces, I build intelligent systems that solve real problems. My graduation project achieved 99.7% accuracy in brain tumor detection, proving my ability to deliver cutting-edge solutions.</p>
+            <p class="mt-3 fw-bold text-accent" data-i18n="about-usp">✨ Unique Value: Front-End + ML = Smarter, Data-Driven Web Applications</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-spacing">
+      <div class="container">
+        <div class="section-label text-center" data-i18n="education-label">Education & Certifications</div>
+        <h2 class="section-title text-center" data-i18n="education-heading">My Academic Journey</h2>
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="education-card">
+              <div class="card-header-icon">
+                <i class="fas fa-graduation-cap"></i>
+                <h3 data-i18n="education-section-title">🎓 Education</h3>
+              </div>
+              <div class="edu-item">
+                <div class="edu-year">2018 – 2021</div>
+                <h4>IGCSE · Sahara International School</h4>
+                <p data-i18n="edu-igcse">Foundation in sciences & computing with distinction.</p>
+              </div>
+              <div class="edu-item">
+                <div class="edu-year">2021 – 2025</div>
+                <h4>Ain Shams University & University of East London</h4>
+                <p data-i18n="edu-bachelor">Dual Bachelor: Computer Science (Bioinformatics) — Graduation project: ML Brain Tumor Detection (99.7% accuracy)</p>
+              </div>
+              <div class="edu-item">
+                <div class="edu-year">Aug 2023</div>
+                <h4>ITI Front-End Summer Training</h4>
+                <p data-i18n="edu-iti-fe">Intensive front-end track + certificate in modern web development.</p>
+              </div>
+              <div class="edu-item">
+                <div class="edu-year">Aug 2024</div>
+                <h4>ITI UI/UX Summer Training</h4>
+                <p data-i18n="edu-iti-ux">Design thinking, Figma, UX research methodologies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-spacing">
+      <div class="container">
+        <div class="section-label text-center" data-i18n="experience-label">Professional Experience</div>
+        <h2 class="section-title text-center" data-i18n="experience-heading">Work & Training Journey</h2>
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="experience-card">
+              <div class="card-header-icon">
+                <i class="fas fa-briefcase"></i>
+                <h3 data-i18n="experience-section-title">💼 Experience</h3>
+              </div>
+              <div class="exp-item">
+                <div class="exp-year">Feb 2026 – Present</div>
+                <h4>Digilians x MCIT · Full Stack (MERN) Scholarship</h4>
+                <p data-i18n="exp-digilians">Competitive national program @ Egyptian Military Academy — intensive training in scalable web apps, APIs, MongoDB, Express, React, Node.</p>
+              </div>
+              <div class="exp-item">
+                <div class="exp-year">2023 – 2024</div>
+                <h4>SEF Academy · Advanced Front-End</h4>
+                <p data-i18n="edu-sef">Modern React patterns, advanced JavaScript, performance optimization.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section - WITH TAG FILTERING -->
+    <section id="skills" class="section-spacing">
+      <div class="container">
+        <div class="section-label text-center" data-i18n="skills-label">Technical Expertise</div>
+        <h2 class="section-title text-center" data-i18n="skills-heading">My Tech Arsenal</h2>
+        <p class="text-center text-secondary mb-5" data-i18n="skills-filter-hint">Click on any category to explore my skills</p>
+
+        <!-- Category Filter Buttons -->
+        <div class="d-flex flex-wrap justify-content-center gap-3 mb-5" data-aos="fade-up">
+          <button class="skill-filter-btn" data-filter="languages" data-i18n="filter-languages">💻 Languages</button>
+          <button class="skill-filter-btn" data-filter="tools" data-i18n="filter-tools">🛠️ Tools</button>
+          <button class="skill-filter-btn" data-filter="concepts" data-i18n="filter-concepts">🧠 Concepts</button>
+          <button class="skill-filter-btn" data-filter="languages-spoken" data-i18n="filter-spoken">🗣️ Languages</button>
+          <button class="skill-filter-btn active" data-filter="all" data-i18n="filter-all">All Skills</button>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="skill-category-container" data-category="languages" data-aos="fade-up">
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon"><i class="fas fa-code"></i></div>
+              <h3 class="skill-category-title" data-i18n="skill-lang-title">Programming Languages</h3>
+            </div>
+            <div class="skill-tags-grid">
+              <div class="skill-tag"><i class="fab fa-python"></i> Python</div>
+              <div class="skill-tag"><i class="fab fa-html5"></i> HTML5</div>
+              <div class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</div>
+              <div class="skill-tag"><i class="fab fa-js"></i> JavaScript</div>
+              <div class="skill-tag"><i class="fab fa-react"></i> React</div>
+              <div class="skill-tag"><i class="fab fa-node-js"></i> Node.js</div>
+              <div class="skill-tag"><i class="fas fa-database"></i> SQL</div>
+              <div class="skill-tag"><i class="fab fa-java"></i> Java</div>
+              <div class="skill-tag"><i class="fas fa-code"></i> C++</div>
+              <div class="skill-tag"><i class="fas fa-code"></i> C#</div>
+              <div class="skill-tag"><i class="fab fa-js"></i> TypeScript</div>
+              <div class="skill-tag"><i class="fab fa-python"></i> R</div>
+              <div class="skill-tag"><i class="fab fa-scala"></i> Scala</div>
+              <div class="skill-tag"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+              <div class="skill-tag"><i class="fab fa-tailwind"></i> Tailwind CSS</div>
+              <div class="skill-tag"><i class="fab fa-js"></i> ECMAScript (ES6)</div>
+              <div class="skill-tag"><i class="fab fa-docker"></i> Docker</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technologies & Tools -->
+        <div class="skill-category-container" data-category="tools" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon"><i class="fas fa-tools"></i></div>
+              <h3 class="skill-category-title" data-i18n="skill-tools-title">Technologies & Tools</h3>
+            </div>
+            <div class="skill-tags-grid">
+              <div class="skill-tag"><i class="fas fa-code"></i> VS Code</div>
+              <div class="skill-tag"><i class="fab fa-python"></i> PyCharm</div>
+              <div class="skill-tag"><i class="fab fa-java"></i> NetBeans</div>
+              <div class="skill-tag"><i class="fab fa-java"></i> Eclipse</div>
+              <div class="skill-tag"><i class="fas fa-chart-line"></i> R Studio</div>
+              <div class="skill-tag"><i class="fas fa-database"></i> Oracle</div>
+              <div class="skill-tag"><i class="fas fa-chart-bar"></i> Crystal Reports</div>
+              <div class="skill-tag"><i class="fas fa-calculator"></i> Matlab</div>
+              <div class="skill-tag"><i class="fas fa-file-excel"></i> Microsoft Office</div>
+              <div class="skill-tag"><i class="fas fa-database"></i> Tora Software</div>
+              <div class="skill-tag"><i class="fab fa-git-alt"></i> Git</div>
+              <div class="skill-tag"><i class="fab fa-figma"></i> Figma</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Concepts & Methodologies -->
+        <div class="skill-category-container" data-category="concepts" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon"><i class="fas fa-brain"></i></div>
+              <h3 class="skill-category-title" data-i18n="skill-concepts-title">Concepts & Methodologies</h3>
+            </div>
+            <div class="skill-concepts-grid">
+              <div class="concept-item"><i class="fas fa-robot"></i> Machine Learning</div>
+              <div class="concept-item"><i class="fas fa-database"></i> Database Management</div>
+              <div class="concept-item"><i class="fas fa-code-branch"></i> Structured Programming</div>
+              <div class="concept-item"><i class="fas fa-cubes"></i> Object Oriented Programming</div>
+              <div class="concept-item"><i class="fas fa-tree"></i> Data Structures</div>
+              <div class="concept-item"><i class="fas fa-chart-line"></i> Algorithms</div>
+              <div class="concept-item"><i class="fas fa-network-wired"></i> Computer Networks</div>
+              <div class="concept-item"><i class="fas fa-microchip"></i> Operating Systems</div>
+              <div class="concept-item"><i class="fas fa-chart-pie"></i> Data Mining</div>
+              <div class="concept-item"><i class="fas fa-cogs"></i> Software Engineering</div>
+              <div class="concept-item"><i class="fas fa-cloud"></i> Cloud Computing</div>
+              <div class="concept-item"><i class="fas fa-brain"></i> Neural Networks</div>
+              <div class="concept-item"><i class="fas fa-image"></i> Image Processing</div>
+              <div class="concept-item"><i class="fas fa-chart-bar"></i> Data Visualization</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages Spoken -->
+        <div class="skill-category-container" data-category="languages-spoken" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-category-icon"><i class="fas fa-language"></i></div>
+              <h3 class="skill-category-title" data-i18n="skill-spoken-title">Languages</h3>
+            </div>
+            <div class="language-progress-grid">
+              <div class="language-item">
+                <div class="language-info"><i class="fas fa-flag-checkered"></i><span class="language-name">Arabic</span><span class="language-level" data-i18n="lang-arabic-level">Native</span></div>
+                <div class="progress-bar-container"><div class="progress-bar" style="width: 100%"></div></div>
+              </div>
+              <div class="language-item">
+                <div class="language-info"><i class="fas fa-flag-usa"></i><span class="language-name">English</span><span class="language-level" data-i18n="lang-english-level">B2 - Upper Intermediate</span></div>
+                <div class="progress-bar-container"><div class="progress-bar" style="width: 85%"></div></div>
+              </div>
+              <div class="language-item">
+                <div class="language-info"><i class="fas fa-flag"></i><span class="language-name">Spanish</span><span class="language-level" data-i18n="lang-spanish-level">B1 - Intermediate (Certified)</span></div>
+                <div class="progress-bar-container"><div class="progress-bar" style="width: 70%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section-spacing">
+      <div class="container">
+        <div class="section-label text-center" data-i18n="services-label">What I Offer</div>
+        <h2 class="section-title text-center" data-i18n="services-heading">Services</h2>
+        <div class="services-grid mt-4">
+          <div class="service-card" data-aos="flip-left"><i class="fas fa-laptop-code"></i>
+            <h3 data-i18n="service-1-title">Responsive Web Dev</h3>
+            <p data-i18n="service-1-desc">Pixel-perfect, mobile-first websites using React, Tailwind, modern CSS.</p>
+            <div class="service-tech"><span>React</span><span>Tailwind</span></div>
+          </div>
+          <div class="service-card" data-aos="flip-left" data-aos-delay="100"><i class="fas fa-wand-magic-sparkles"></i>
+            <h3 data-i18n="service-2-title">Interactive UI/UX</h3>
+            <p data-i18n="service-2-desc">Dynamic interfaces, animations, API integration, user-centric design.</p>
+            <div class="service-tech"><span>Figma</span><span>Framer Motion</span></div>
+          </div>
+          <div class="service-card" data-aos="flip-left" data-aos-delay="200"><i class="fas fa-chart-line"></i>
+            <h3 data-i18n="service-3-title">Performance Optimization</h3>
+            <p data-i18n="service-3-desc">SEO-friendly, fast-loading apps, Core Web Vitals best practices.</p>
+            <div class="service-tech"><span>Lighthouse</span><span>Webpack</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section-spacing">
+      <div class="container">
+        <div class="section-label text-center" data-i18n="pricing-label">Ready to start your project?</div>
+        <h2 class="section-title text-center" data-i18n="pricing-heading">View Pricing Plans</h2>
+        <div class="text-center mb-5">
+          <a href="pricing.html" class="btn btn-gradient btn-lg px-5"><i class="fas fa-credit-card me-2"></i><span data-i18n="pricing-view-details">💰 View Detailed Pricing</span></a>
+        </div>
+        <div class="pricing-grid mt-5">
+          <div class="price-card" data-aos="zoom-in">
+            <h3 data-i18n="price-starter">Starter</h3>
+            <div class="price-number">$5-15</div>
+            <p data-i18n="price-starter-desc">Perfect for small businesses</p>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="price-starter-1">1 Landing Page (up to 5 sections)</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="price-starter-2">Fully Responsive Design</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="price-starter-3">Contact Form Integration</span></li>
+              <li><i class="fas fa-clock"></i> <span data-i18n="price-starter-5">1 Week Delivery</span></li>
+            </ul><a href="pricing.html" class="btn-price" data-i18n="price-btn">View Details</a>
+          </div>
+          <div class="price-card popular" data-aos="zoom-in" data-aos-delay="100">
+            <div class="popular-badge" data-i18n="popular-badge">Most Popular</div>
+            <h3 data-i18n="price-pro">Professional</h3>
+            <div class="price-number">$20-40</div>
+            <p data-i18n="price-pro-desc">Best for growing brands</p>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="price-pro-1">Up to 5 Pages / React SPA</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="price-pro-2">Custom Animations</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="price-pro-3">REST API Integration</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="price-pro-5">Performance Optimization</span></li>
+            </ul><a href="pricing.html" class="btn-gradient" data-i18n="price-btn-pro">Get Started</a>
+          </div>
+          <div class="price-card" data-aos="zoom-in" data-aos-delay="200">
+            <h3 data-i18n="price-business">Business</h3>
+            <div class="price-number">$50-80</div>
+            <p data-i18n="price-business-desc">Enterprise solutions</p>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="price-business-1">Full MERN Stack Application</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="price-business-2">User Authentication & Database</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="price-business-4">3 Months Priority Support</span></li>
+            </ul><a href="pricing.html" class="btn-price" data-i18n="price-btn-contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION - RESTRUCTURED -->
+    <section id="projects" class="section-spacing">
+      <div class="container">
+        <div class="section-label text-center" data-i18n="projects-label">Featured Work</div>
+        <h2 class="section-title text-center" data-i18n="projects-heading">Projects I've Built</h2>
+        <div class="projects-grid mt-5">
+          
+          <!-- Project 1 - Brain Tumor Detection -->
+          <div class="project-card" data-aos="flip-up">
+            <div class="project-img"><img src="images/projectBrain.png" alt="Brain Tumor Detection">
+              <div class="project-overlay"><a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a></div>
+            </div>
+            <div class="project-info">
+              <h3 data-i18n="project-1-title">Brain Tumor Detection & Staging</h3>
+              <div class="project-meta"><span class="project-badge"><i class="far fa-clock"></i> <span data-i18n="project-1-time">3 months</span></span><span class="project-badge"><i class="fas fa-building"></i> <span data-i18n="project-1-place">Graduation Project @ ASU</span></span></div>
+              <p data-i18n="project-1-desc">99.7% accuracy using EfficientNetB3 for glioma, meningioma, and pituitary tumor classification.</p>
+              <div class="project-features"><strong data-i18n="project-features-label">Features:</strong> <span data-i18n="project-1-features">MRI image analysis, Real-time classification, Medical report generation</span></div>
+              <div class="project-tech"><span>Python</span><span>TensorFlow</span><span>EfficientNetB3</span><span>Flask</span><span>OpenCV</span></div>
+              <div class="project-links"><a href="#" class="project-link-icon"><i class="fab fa-github"></i> GitHub</a><a href="#" class="project-link-icon"><i class="fab fa-vercel"></i> Live Demo</a><a href="#" class="project-link-icon"><i class="fas fa-play-circle"></i> Video</a></div>
+              <a href="https://www.linkedin.com/in/salma--amr/details/projects/" target="_blank" class="btn-view-project"><span data-i18n="view-project">View Project</span> →</a>
+            </div>
+          </div>
+
+          <!-- Project 2 - Global News Hub -->
+          <div class="project-card" data-aos="flip-up" data-aos-delay="100">
+            <div class="project-img"><img src="images/projectNews.png" alt="News Hub">
+              <div class="project-overlay"><a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a></div>
+            </div>
+            <div class="project-info">
+              <h3 data-i18n="project-2-title">Global News & Sports Hub</h3>
+              <div class="project-meta"><span class="project-badge"><i class="far fa-clock"></i> <span data-i18n="project-2-time">2 weeks</span></span><span class="project-badge"><i class="fas fa-user-graduate"></i> <span data-i18n="project-2-place">Personal Project</span></span></div>
+              <p data-i18n="project-2-desc">Real-time news aggregator with category filters and sports leagues data.</p>
+              <div class="project-features"><strong data-i18n="project-features-label">Features:</strong> <span data-i18n="project-2-features">Live API integration, Category filtering, Search functionality, Dark mode</span></div>
+              <div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap5</span><span>NewsAPI</span><span>SportsDB</span></div>
+              <div class="project-links"><a href="#" class="project-link-icon"><i class="fab fa-github"></i> GitHub</a><a href="#" class="project-link-icon"><i class="fab fa-vercel"></i> Live Demo</a><a href="#" class="project-link-icon"><i class="fas fa-play-circle"></i> Video</a></div>
+              <a href="https://www.linkedin.com/in/salma--amr/details/projects/" target="_blank" class="btn-view-project"><span data-i18n="view-project">View Project</span> →</a>
+            </div>
+          </div>
+
+          <!-- Project 3 - Space Explorer -->
+          <div class="project-card" data-aos="flip-up" data-aos-delay="200">
+            <div class="project-img"><img src="images/projectSpace.png" alt="Space Explorer">
+              <div class="project-overlay"><a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a></div>
+            </div>
+            <div class="project-info">
+              <h3 data-i18n="project-3-title">Space Explorer</h3>
+              <div class="project-meta"><span class="project-badge"><i class="far fa-clock"></i> <span data-i18n="project-3-time">3 weeks</span></span><span class="project-badge"><i class="fas fa-user-graduate"></i> <span data-i18n="project-3-place">Personal Project</span></span></div>
+              <p data-i18n="project-3-desc">NASA APOD gallery + 3D planet viewer with interactive space exploration.</p>
+              <div class="project-features"><strong data-i18n="project-features-label">Features:</strong> <span data-i18n="project-3-features">NASA API integration, 3D planet models, Date picker, Favorites save</span></div>
+              <div class="project-tech"><span>React</span><span>Three.js</span><span>NASA API</span><span>CSS3</span><span>Framer Motion</span></div>
+              <div class="project-links"><a href="#" class="project-link-icon"><i class="fab fa-github"></i> GitHub</a><a href="#" class="project-link-icon"><i class="fab fa-vercel"></i> Live Demo</a><a href="#" class="project-link-icon"><i class="fas fa-play-circle"></i> Video</a></div>
+              <a href="https://www.linkedin.com/in/salma--amr/details/projects/" target="_blank" class="btn-view-project"><span data-i18n="view-project">View Project</span> →</a>
+            </div>
+          </div>
+
+          <!-- Project 4 - To-Do Master -->
+          <div class="project-card" data-aos="flip-up" data-aos-delay="300">
+            <div class="project-img"><img src="images/projectToDo.png" alt="To-Do Master">
+              <div class="project-overlay"><a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a></div>
+            </div>
+            <div class="project-info">
+              <h3 data-i18n="project-4-title">To-Do Master</h3>
+              <div class="project-meta"><span class="project-badge"><i class="far fa-clock"></i> <span data-i18n="project-4-time">1 week</span></span><span class="project-badge"><i class="fas fa-user-graduate"></i> <span data-i18n="project-4-place">Personal Project</span></span></div>
+              <p data-i18n="project-4-desc">Drag & drop tasks, local storage, dark mode, and productivity tracking.</p>
+              <div class="project-features"><strong data-i18n="project-features-label">Features:</strong> <span data-i18n="project-4-features">Drag & drop, Local storage, Dark/light mode, Task categories, Due dates</span></div>
+              <div class="project-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap5</span><span>LocalStorage</span></div>
+              <div class="project-links"><a href="#" class="project-link-icon"><i class="fab fa-github"></i> GitHub</a><a href="#" class="project-link-icon"><i class="fab fa-vercel"></i> Live Demo</a><a href="#" class="project-link-icon"><i class="fas fa-play-circle"></i> Video</a></div>
+              <a href="https://www.linkedin.com/in/salma--amr/details/projects/" target="_blank" class="btn-view-project"><span data-i18n="view-project">View Project</span> →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="section-spacing">
+      <div class="container">
+        <div class="section-label text-center" data-i18n="testimonials-label">Client Feedback</div>
+        <h2 class="section-title text-center" data-i18n="testimonials-heading">What People Say</h2>
+        <div class="testimonials-grid mt-5">
+          <div class="testimonial-card" data-aos="fade-up">
+            <div class="testimonial-icon"><i class="fas fa-quote-right"></i></div>
+            <div class="testimonial-content" data-i18n="testimonial-1-text">Coming Soon! I'm currently gathering feedback from my amazing clients. Your testimonial could be here!</div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><i class="fas fa-user-circle"></i></div>
+              <div class="testimonial-info">
+                <h4 data-i18n="testimonial-1-name">Future Client</h4>
+                <p data-i18n="testimonial-1-role">Be the first to leave a review</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-icon"><i class="fas fa-quote-right"></i></div>
+            <div class="testimonial-content" data-i18n="testimonial-2-text">✨ Coming Soon! I'm excited to work with you and earn your trust. Let's build something amazing together!</div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><i class="fas fa-star"></i></div>
+              <div class="testimonial-info">
+                <h4 data-i18n="testimonial-2-name">Your Name Here</h4>
+                <p data-i18n="testimonial-2-role">Share your experience</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-icon"><i class="fas fa-quote-right"></i></div>
+            <div class="testimonial-content" data-i18n="testimonial-3-text">🚀 Coming Soon! Ready to deliver exceptional results for your project. Contact me to get started!</div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><i class="fas fa-handshake"></i></div>
+              <div class="testimonial-info">
+                <h4 data-i18n="testimonial-3-name">Your Business</h4>
+                <p data-i18n="testimonial-3-role">Let's collaborate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-spacing">
+      <div class="container">
+        <div class="section-label text-center" data-i18n="contact-label">Get In Touch</div>
+        <h2 class="section-title text-center" data-i18n="contact-heading">Let's Talk</h2>
+        <div class="contact-wrapper mt-5">
+          <!-- Left Card - Contact Info -->
+          <div class="contact-info" data-aos="fade-right">
+            <h3 data-i18n="contact-sub">Have a project in mind?</h3>
+            <p data-i18n="contact-desc">Reach out for collaborations or tech chats.</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-i18n="contact-location">Cairo, Egypt</span>
+              </div>
+              <a href="#" class="contact-item" id="phoneLink">
+                <i class="fas fa-phone"></i>
+                <span>+20 01060431949</span>
+              </a>
+              <a href="#" class="contact-item" id="whatsappLink">
+                <i class="fab fa-whatsapp"></i>
+                <span data-i18n="contact-whatsapp">Chat on WhatsApp</span>
+              </a>
+              <a href="#" class="contact-item" id="emailLink">
+                <i class="fas fa-envelope"></i>
+                <span>salma_amr200311@yahoo.com</span>
+              </a>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/salmaamrgit" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/salma--amr/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://x.com/" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+
+          <!-- Right Card - Contact Form -->
+          <div class="contact-form" data-aos="fade-left">
+            <form id="contactForm" action="https://formsubmit.co/salma_amr200311@yahoo.com" method="POST">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="box">
+              <input type="hidden" name="_subject" value="New Portfolio Message from Salma's Website!">
+              <input type="hidden" name="_next" value="https://formsubmit.co/thankyou">
+
+              <input type="text" name="name" id="contactName" placeholder="Your Name" required data-i18n-placeholder="contact-name-placeholder">
+              <input type="email" name="email" id="contactEmail" placeholder="Email address" required data-i18n-placeholder="contact-email-placeholder">
+              <textarea name="message" id="contactMsg" rows="4" placeholder="Tell me about your project..."
+                required data-i18n-placeholder="contact-msg-placeholder"></textarea>
+
+              <button type="submit" class="btn-gradient w-100">
+                <span data-i18n="contact-send">Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+            <div id="formMessage"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SIMPLIFIED FOOTER - Inspired by Ahmed Adel & Esraa Kaf screenshots -->
+  <footer class="portfolio-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a class="navbar-brand fw-bold fs-2" href="#home">SA<span class="text-accent">.</span></a>
+          <p class="footer-tagline" data-i18n="footer-text">Built with passion for web development ❤️</p>
+        </div>
+        
+        <div class="footer-info">
+          <div class="footer-contact">
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span data-i18n="contact-location">Cairo, Egypt</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-globe"></i>
+              <span data-i18n="contact-available">Available for remote work worldwide</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:salma_amr200311@yahoo.com">salma_amr200311@yahoo.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+201060431949">+20 010 6043 1949</a>
+            </div>
+          </div>
+          
+          <div class="footer-social">
+            <a href="https://github.com/salmaamrgit" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/salma--amr/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-copyright">
+          <p>© <span id="year"></span> Salma Amr. <span data-i18n="footer-text">Built with passion for web development</span> <i class="fas fa-heart"></i></p>
+          <p class="footer-response" data-i18n="footer-response">✨ Usually responds within 24 hours</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
