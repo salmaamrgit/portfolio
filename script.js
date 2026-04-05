@@ -239,8 +239,11 @@ const translations = {
         'contact-msg-placeholder': 'Tell me about your project...',
 
         // Footer
-        'footer-text': 'Crafted with passion',
-        'footer-portfolios-title': 'Explore More Portfolios',
+        'footer-shy-title': "DON'T BE SHY!",
+        'footer-message': "Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
+        'footer-name': "S.A.",
+        'footer-role': "I'm a <strong>Front-End Developer & MERN Stack Enthusiast</strong>, passionate and dedicated to my work. I have acquired the skills and knowledge necessary to design and develop user-friendly, scalable web applications that make your project a success.",
+        'footer-response': "🛠️ Usually responds within 24 hours",
 
         // Pricing Page
         'back-home': 'Back to Home',
@@ -414,8 +417,11 @@ const translations = {
         'contact-msg-placeholder': 'أخبرني عن مشروعك...',
 
         // Footer
-        'footer-text': 'صممت بشغف',
-        'footer-portfolios-title': '🌟 المزيد من المحافظ الملهمة',
+        'footer-shy-title': "لا تتردد!",
+        'footer-message': "لا تتردد في التواصل معي. أنا دائمًا منفتحة لمناقشة المشاريع الجديدة والأفكار الإبداعية أو فرص أن أكون جزءًا من رؤيتك.",
+        'footer-name': "س.ع.",
+        'footer-role': "أنا <strong>مطورة واجهات أمامية ومتحمسة لمكدس MERN</strong>، شغوفة ومخلصة لعملي. لقد اكتسبت المهارات والمعرفة اللازمة لتصميم وتطوير تطبيقات ويب سهلة الاستخدام وقابلة للتطوير تجعل مشروعك ناجحًا.",
+        'footer-response': "🛠️ عادةً ما أرد خلال 24 ساعة",
 
         // Pricing Page
         'back-home': 'العودة للرئيسية',
@@ -424,18 +430,7 @@ const translations = {
         'pricing-subtitle': 'خيارات مرنة مصممة حسب احتياجاتك — من الصفحات التعريفية البسيطة إلى التطبيقات المتكاملة',
         'pricing-note-title': 'هل تحتاج حلاً مخصصاً؟',
         'pricing-note-desc': 'كل مشروع فريد. تواصل معي للحصول على عرض سعر مخصص بناءً على متطلباتك الخاصة والجدول الزمني والميزانية.',
-        'pricing-note-btn': 'لنناقش مشروعك ←',
-        // Add these to your existing translations.en object:
-        'footer-shy-title': "DON'T BE SHY!",
-        'footer-message': "Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
-        'footer-name': "S.A.",
-        'footer-role': "I'm a <strong>Front-End Developer & MERN Stack Enthusiast</strong>, passionate and dedicated to my work. I have acquired the skills and knowledge necessary to design and develop user-friendly, scalable web applications that make your project a success.",
-
-        // Add these to your existing translations.ar object:
-        'footer-shy-title': "لا تتردد!",
-        'footer-message': "لا تتردد في التواصل معي. أنا دائمًا منفتحة لمناقشة المشاريع الجديدة والأفكار الإبداعية أو فرص أن أكون جزءًا من رؤيتك.",
-        'footer-name': "س.ع.",
-        'footer-role': "أنا <strong>مطورة واجهات أمامية ومتحمسة لمكدس MERN</strong>، شغوفة ومخلصة لعملي. لقد اكتسبت المهارات والمعرفة اللازمة لتصميم وتطوير تطبيقات ويب سهلة الاستخدام وقابلة للتطوير تجعل مشروعك ناجحًا.",
+        'pricing-note-btn': 'لنناقش مشروعك ←'
     }
 };
 

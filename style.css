@@ -1,4 +1,3 @@
-
 /* =========================
    Base Theme Variables
 ========================= */
@@ -1267,31 +1266,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =========================
-   NEW ENHANCED FOOTER STYLES
-========================= */
-
-/* =========================
-   ESRA KAF STYLE FOOTER - Clean & Inspirational
-   Replace your existing footer styles with this
+   BLENDED FOOTER STYLES (Inspired by both screenshots)
 ========================= */
 .portfolio-footer {
     background: var(--bg-secondary);
-    padding: 4rem 0 3rem;
+    padding: 4rem 0 2.5rem;
     border-top: 1px solid var(--surface-border);
     margin-top: 2rem;
 }
 
-.footer-esraa-style {
-    max-width: 800px;
+.footer-blend {
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
 }
 
 .footer-shy-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 800;
-    letter-spacing: 2px;
-    margin-bottom: 1.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
     background: linear-gradient(135deg, var(--accent), var(--accent-2));
     -webkit-background-clip: text;
     background-clip: text;
@@ -1303,20 +1297,18 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-secondary);
     font-size: 0.95rem;
     line-height: 1.7;
-    margin-bottom: 2rem;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 2rem auto;
 }
 
 .footer-signature {
-    margin: 2rem 0 1.5rem;
+    margin: 1.5rem 0 1rem;
 }
 
 .footer-name {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     color: var(--accent-2);
     font-family: "Syne", sans-serif;
     position: relative;
@@ -1327,22 +1319,25 @@ h1, h2, h3, h4, h5, h6 {
 .footer-name::after {
     content: "—";
     color: var(--accent-2);
-    opacity: 0.5;
-    margin: 0 0.8rem;
+    opacity: 0.6;
+    margin: 0 1rem;
     font-weight: 300;
 }
 
 .footer-role {
-    margin: 1.5rem 0 2rem;
+    background: rgba(45, 212, 191, 0.05);
+    padding: 1.5rem;
+    border-radius: 2rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(45, 212, 191, 0.2);
 }
 
 .footer-role p {
     color: var(--text-primary);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     line-height: 1.7;
     max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .footer-role strong {
@@ -1350,65 +1345,56 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
-.footer-copyright-simple {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
+.footer-contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0 1.5rem;
+    padding: 1rem 0;
     border-top: 1px solid var(--surface-border);
+    border-bottom: 1px solid var(--surface-border);
 }
 
-.footer-copyright-simple p {
+.footer-contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
     color: var(--text-secondary);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-contact-item i {
+    color: var(--accent-2);
+    font-size: 1rem;
+}
+
+.footer-contact-item:hover {
+    color: var(--accent-2);
+    transform: translateY(-2px);
+}
+
+.footer-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(45, 212, 191, 0.1);
+    border-radius: 50px;
+    padding: 0.4rem 1rem;
+    font-size: 0.75rem;
+    color: var(--accent-2);
+    margin-top: 0.5rem;
+}
+
+.footer-copyright {
+    margin-top: 2rem;
     font-size: 0.8rem;
-    margin: 0;
+    color: var(--text-secondary);
+    text-align: center;
 }
 
-/* Responsive Footer */
-@media (max-width: 768px) {
-    .portfolio-footer {
-        padding: 3rem 0 2rem;
-    }
-    
-    .footer-shy-title {
-        font-size: 1.5rem;
-        letter-spacing: 1px;
-    }
-    
-    .footer-message {
-        font-size: 0.85rem;
-        padding: 0 1rem;
-    }
-    
-    .footer-name {
-        font-size: 1.2rem;
-        letter-spacing: 2px;
-    }
-    
-    .footer-name::before,
-    .footer-name::after {
-        margin: 0 0.4rem;
-    }
-    
-    .footer-role p {
-        font-size: 0.85rem;
-        padding: 0 1rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .footer-shy-title {
-        font-size: 1.2rem;
-    }
-    
-    .footer-name {
-        font-size: 1rem;
-        letter-spacing: 1px;
-    }
-    
-    .footer-name::before,
-    .footer-name::after {
-        display: none;
-    }
-}
 /* =========================
    Animations
 ========================= */
@@ -1483,19 +1469,6 @@ h1, h2, h3, h4, h5, h6 {
     .testimonials-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
-    
-    .footer-inner {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .footer-social {
-        justify-content: center;
-    }
-    
-    .footer-links-grid {
-        justify-content: center;
-    }
 }
 
 @media (max-width: 768px) {
@@ -1545,6 +1518,21 @@ h1, h2, h3, h4, h5, h6 {
         height: 40px;
         bottom: 20px;
         right: 20px;
+    }
+    
+    .footer-name::before,
+    .footer-name::after {
+        margin: 0 0.5rem;
+    }
+    
+    .footer-shy-title {
+        font-size: 1.6rem;
+    }
+    
+    .footer-contact-row {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
