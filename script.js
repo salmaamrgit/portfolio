@@ -239,8 +239,8 @@ const translations = {
         'contact-msg-placeholder': 'Tell me about your project...',
 
         // Footer
-        'footer-shy-title': "DON'T BE SHY!",
-        'footer-message': "Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
+        // Footer
+        'footer-shy-title': "DREAM IT, CODE IT", 'footer-message': "Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
         'footer-name': "S.A.",
         'footer-role': "I'm a <strong>Front-End Developer & MERN Stack Enthusiast</strong>, passionate and dedicated to my work. I have acquired the skills and knowledge necessary to design and develop user-friendly, scalable web applications that make your project a success.",
         'footer-response': "🛠️ Usually responds within 24 hours",
@@ -417,7 +417,8 @@ const translations = {
         'contact-msg-placeholder': 'أخبرني عن مشروعك...',
 
         // Footer
-        'footer-shy-title': "لا تتردد!",
+        // Footer
+        'footer-shy-title': "احلم بها، ابرمجها",
         'footer-message': "لا تتردد في التواصل معي. أنا دائمًا منفتحة لمناقشة المشاريع الجديدة والأفكار الإبداعية أو فرص أن أكون جزءًا من رؤيتك.",
         'footer-name': "س.ع.",
         'footer-role': "أنا <strong>مطورة واجهات أمامية ومتحمسة لمكدس MERN</strong>، شغوفة ومخلصة لعملي. لقد اكتسبت المهارات والمعرفة اللازمة لتصميم وتطوير تطبيقات ويب سهلة الاستخدام وقابلة للتطوير تجعل مشروعك ناجحًا.",
