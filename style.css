@@ -1271,160 +1271,144 @@ h1, h2, h3, h4, h5, h6 {
 ========================= */
 
 /* =========================
-   ENHANCED FOOTER STYLES - Inspired by Ahmed Adel & Esraa Kaf
+   ESRA KAF STYLE FOOTER - Clean & Inspirational
    Replace your existing footer styles with this
 ========================= */
 .portfolio-footer {
     background: var(--bg-secondary);
-    padding: 3rem 0 2rem;
+    padding: 4rem 0 3rem;
     border-top: 1px solid var(--surface-border);
     margin-top: 2rem;
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.footer-brand {
+.footer-esraa-style {
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.footer-brand .navbar-brand {
+.footer-shy-title {
     font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: "Syne", sans-serif;
+}
+
+.footer-message {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-signature {
+    margin: 2rem 0 1.5rem;
+}
+
+.footer-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: var(--accent-2);
+    font-family: "Syne", sans-serif;
+    position: relative;
     display: inline-block;
 }
 
-.footer-tagline {
-    color: var(--text-secondary);
-    font-size: 0.85rem;
-    margin-top: 0.5rem;
-}
-
-.footer-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 1rem 0;
-    border-top: 1px solid var(--surface-border);
-    border-bottom: 1px solid var(--surface-border);
-}
-
-.footer-contact {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.footer-contact-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-}
-
-.footer-contact-item i {
+.footer-name::before,
+.footer-name::after {
+    content: "—";
     color: var(--accent-2);
-    font-size: 0.9rem;
-    width: 20px;
+    opacity: 0.5;
+    margin: 0 0.8rem;
+    font-weight: 300;
 }
 
-.footer-contact-item a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: var(--transition);
+.footer-role {
+    margin: 1.5rem 0 2rem;
 }
 
-.footer-contact-item a:hover {
-    color: var(--accent-2);
-}
-
-.footer-social {
-    display: flex;
-    gap: 1rem;
-}
-
-.footer-social a {
-    width: 38px;
-    height: 38px;
-    background: var(--surface-card);
-    border: 1px solid var(--surface-border);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer-role p {
     color: var(--text-primary);
-    transition: var(--transition);
-    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.footer-social a:hover {
-    background: linear-gradient(135deg, var(--accent), var(--accent-2));
-    color: white;
-    transform: translateY(-3px);
-    border-color: transparent;
-    box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
+.footer-role strong {
+    color: var(--accent-2);
+    font-weight: 600;
 }
 
-.footer-copyright {
-    text-align: center;
+.footer-copyright-simple {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--surface-border);
 }
 
-.footer-copyright p {
+.footer-copyright-simple p {
     color: var(--text-secondary);
     font-size: 0.8rem;
-    margin: 0.3rem 0;
-}
-
-.footer-copyright i.fa-heart {
-    color: var(--accent-2);
-    animation: heartbeat 1.5s ease infinite;
-}
-
-.footer-response {
-    font-size: 0.75rem;
-    color: var(--accent-2);
-    margin-top: 0.5rem;
-}
-
-@keyframes heartbeat {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.2); }
+    margin: 0;
 }
 
 /* Responsive Footer */
 @media (max-width: 768px) {
-    .footer-info {
-        flex-direction: column;
-        text-align: center;
+    .portfolio-footer {
+        padding: 3rem 0 2rem;
     }
     
-    .footer-contact {
-        justify-content: center;
+    .footer-shy-title {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
     }
     
-    .footer-contact-item {
-        justify-content: center;
+    .footer-message {
+        font-size: 0.85rem;
+        padding: 0 1rem;
+    }
+    
+    .footer-name {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+    
+    .footer-name::before,
+    .footer-name::after {
+        margin: 0 0.4rem;
+    }
+    
+    .footer-role p {
+        font-size: 0.85rem;
+        padding: 0 1rem;
     }
 }
 
 @media (max-width: 576px) {
-    .footer-contact {
-        flex-direction: column;
-        gap: 0.8rem;
-        align-items: center;
+    .footer-shy-title {
+        font-size: 1.2rem;
     }
     
-    .footer-contact-item {
-        width: 100%;
-        justify-content: center;
+    .footer-name {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    
+    .footer-name::before,
+    .footer-name::after {
+        display: none;
     }
 }
-
 /* =========================
    Animations
 ========================= */

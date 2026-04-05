@@ -57,7 +57,7 @@ function filterSkills(category) {
             container.classList.add('hidden');
         }
     });
-    
+
     filterButtons.forEach(btn => {
         if (btn.getAttribute('data-filter') === category) {
             btn.classList.add('active');
@@ -88,7 +88,7 @@ const translations = {
         'nav-projects': 'Projects',
         'nav-testimonials': 'Testimonials',
         'nav-contact': 'Contact',
-        
+
         // Hero
         'hero-badge': '✦ Front-End Developer',
         'hero-greeting': "Hi, I'm",
@@ -96,7 +96,7 @@ const translations = {
         'hero-desc': 'Computer Science graduate & Front-End Engineer specializing in React, TypeScript, and modern web technologies. Currently a MERN scholar @ Digilians, building scalable applications with cutting-edge tools.',
         'hero-btn-work': '✨ View Work',
         'hero-btn-contact': 'Download CV',
-        
+
         // About
         'about-title': 'What Makes Me Different',
         'about-stat-years': 'Years Coding',
@@ -109,7 +109,7 @@ const translations = {
         'about-text-1': "I'm Salma, a Computer Science graduate (Bioinformatics) from Ain Shams University & University of East London. My passion for programming started over four years ago, and since then, I've been on a mission to create web experiences that are not just functional, but truly exceptional.",
         'about-text-2': 'I specialize in building scalable, performant applications using React, TypeScript, and modern CSS frameworks. What sets me apart is my unique blend of front-end expertise and machine learning knowledge — I don\'t just build interfaces, I build intelligent systems that solve real problems. My graduation project achieved 99.7% accuracy in brain tumor detection, proving my ability to deliver cutting-edge solutions.',
         'about-usp': '✨ Unique Value: Front-End + ML = Smarter, Data-Driven Web Applications',
-        
+
         // Education
         'education-label': 'Education & Certifications',
         'education-heading': 'My Academic Journey',
@@ -118,14 +118,14 @@ const translations = {
         'edu-bachelor': 'Dual Bachelor: Computer Science (Bioinformatics) — Graduation project: ML Brain Tumor Detection (99.7% accuracy)',
         'edu-iti-fe': 'Intensive front-end track + certificate in modern web development.',
         'edu-iti-ux': 'Design thinking, Figma, UX research methodologies.',
-        
+
         // Experience
         'experience-label': 'Professional Experience',
         'experience-heading': 'Work & Training Journey',
         'experience-section-title': '💼 Experience',
         'exp-digilians': 'Competitive national program @ Egyptian Military Academy — intensive training in scalable web apps, APIs, MongoDB, Express, React, Node.',
         'edu-sef': 'Modern React patterns, advanced JavaScript, performance optimization.',
-        
+
         // Skills
         'skills-label': 'Technical Expertise',
         'skills-heading': 'My Tech Arsenal',
@@ -142,7 +142,7 @@ const translations = {
         'lang-arabic-level': 'Native',
         'lang-english-level': 'B2 - Upper Intermediate',
         'lang-spanish-level': 'B1 - Intermediate (Certified)',
-        
+
         // Services
         'services-label': 'What I Offer',
         'services-heading': 'Services',
@@ -152,7 +152,7 @@ const translations = {
         'service-2-desc': 'Dynamic interfaces, animations, API integration, user-centric design.',
         'service-3-title': 'Performance Optimization',
         'service-3-desc': 'SEO-friendly, fast-loading apps, Core Web Vitals best practices.',
-        
+
         // Pricing
         'pricing-label': 'Ready to start your project?',
         'pricing-heading': 'View Pricing Plans',
@@ -185,7 +185,7 @@ const translations = {
         'price-btn-contact': 'Contact Me',
         'price-btn-choose': 'Choose Plan',
         'popular-badge': 'Most Popular',
-        
+
         // Projects
         'projects-label': 'Featured Work',
         'projects-heading': 'Projects I\'ve Built',
@@ -211,7 +211,7 @@ const translations = {
         'project-4-features': 'Drag & drop, Local storage, Dark/light mode, Task categories, Due dates',
         'project-features-label': 'Features',
         'view-project': 'View Project',
-        
+
         // Testimonials
         'testimonials-label': 'Client Feedback',
         'testimonials-heading': 'What People Say',
@@ -224,7 +224,7 @@ const translations = {
         'testimonial-3-text': '🚀 Coming Soon! Ready to deliver exceptional results for your project. Contact me to get started!',
         'testimonial-3-name': 'Your Business',
         'testimonial-3-role': 'Let\'s collaborate',
-        
+
         // Contact
         'contact-label': 'Get In Touch',
         'contact-heading': 'Let\'s Talk',
@@ -237,11 +237,11 @@ const translations = {
         'contact-name-placeholder': 'Your Name',
         'contact-email-placeholder': 'Email address',
         'contact-msg-placeholder': 'Tell me about your project...',
-        
+
         // Footer
         'footer-text': 'Crafted with passion',
         'footer-portfolios-title': 'Explore More Portfolios',
-        
+
         // Pricing Page
         'back-home': 'Back to Home',
         'pricing-badge': '✦ Transparent Pricing',
@@ -263,7 +263,7 @@ const translations = {
         'nav-projects': 'المشاريع',
         'nav-testimonials': 'آراء العملاء',
         'nav-contact': 'اتصل بي',
-        
+
         // Hero
         'hero-badge': '✦ مطورة واجهات أمامية',
         'hero-greeting': 'مرحباً، أنا',
@@ -271,7 +271,7 @@ const translations = {
         'hero-desc': 'خريجة علوم حاسب ومهندسة واجهات أمامية متخصصة في React و TypeScript والتقنيات الحديثة. حالياً متدربة في برنامج MERN @ Digilians، أبني تطبيقات قابلة للتطوير بأحدث الأدوات.',
         'hero-btn-work': '✨ أعمالي',
         'hero-btn-contact': 'تحميل السيرة الذاتية',
-        
+
         // About
         'about-title': 'ما يميزني',
         'about-stat-years': 'سنوات برمجة',
@@ -284,7 +284,7 @@ const translations = {
         'about-text-1': 'أنا سلمى، خريجة علوم حاسب (بيوانفورماتيكس) من جامعة عين شمس وجامعة شرق لندن. بدأت شغفي بالبرمجة منذ أكثر من أربع سنوات، ومنذ ذلك الحين وأنا في مهمة لإنشاء تجارب ويب ليست عملية فحسب، بل استثنائية حقاً.',
         'about-text-2': 'أتخصص في بناء تطبيقات قابلة للتطوير وعالية الأداء باستخدام React و TypeScript وأطر CSS الحديثة. ما يميزني هو مزجي الفريد بين خبرة الواجهات الأمامية ومعرفة التعلم الآلي — فأنا لا أبني واجهات فقط، بل أبني أنظمة ذكية تحل مشاكل حقيقية. حقق مشروع تخرجي دقة 99.7% في كشف أورام الدماغ، مما يثبت قدرتي على تقديم حلول مبتكرة.',
         'about-usp': '✨ قيمة فريدة: الواجهات الأمامية + التعلم الآلي = تطبيقات ويب أذكى تعتمد على البيانات',
-        
+
         // Education
         'education-label': 'التعليم والشهادات',
         'education-heading': 'رحلتي الأكاديمية',
@@ -293,14 +293,14 @@ const translations = {
         'edu-bachelor': 'بكالوريوس مزدوج في علوم الحاسب (بيوانفورماتيكس) — مشروع التخرج: كشف أورام الدماغ بنسبة دقة 99.7%',
         'edu-iti-fe': 'برنامج مكثف في تطوير الواجهات الأمامية مع شهادة.',
         'edu-iti-ux': 'التفكير التصميمي، Figma، وأساليب بحث تجربة المستخدم.',
-        
+
         // Experience
         'experience-label': 'الخبرات المهنية',
         'experience-heading': 'رحلة العمل والتدريب',
         'experience-section-title': '💼 الخبرات',
         'exp-digilians': 'برنامج وطني تنافسي في الأكاديمية العسكرية المصرية — تدريب مكثف في تطوير تطبيقات الويب القابلة للتطوير.',
         'edu-sef': 'أنماط React الحديثة، جافاسكريبت متقدم، تحسين الأداء.',
-        
+
         // Skills
         'skills-label': 'الخبرات التقنية',
         'skills-heading': 'ترسانتي التقنية',
@@ -317,7 +317,7 @@ const translations = {
         'lang-arabic-level': 'لغة أم',
         'lang-english-level': 'B2 - فوق المتوسط',
         'lang-spanish-level': 'B1 - متوسط (معتمد)',
-        
+
         // Services
         'services-label': 'ماذا أقدم',
         'services-heading': 'خدماتي',
@@ -327,7 +327,7 @@ const translations = {
         'service-2-desc': 'واجهات ديناميكية مع رسوم متحركة وتكامل API.',
         'service-3-title': 'تحسين الأداء',
         'service-3-desc': 'تطبيقات سريعة ومتوافقة مع محركات البحث.',
-        
+
         // Pricing
         'pricing-label': 'مستعد لبدء مشروعك؟',
         'pricing-heading': 'خطط الأسعار',
@@ -360,7 +360,7 @@ const translations = {
         'price-btn-contact': 'تواصل معي',
         'price-btn-choose': 'اختر الخطة',
         'popular-badge': 'الأكثر طلباً',
-        
+
         // Projects
         'projects-label': 'أعمالي المميزة',
         'projects-heading': 'المشاريع التي قمت ببنائها',
@@ -386,7 +386,7 @@ const translations = {
         'project-4-features': 'سحب وإسقاط، تخزين محلي، وضع ليلي/نهاري، فئات المهام، تواريخ الاستحقاق',
         'project-features-label': 'المميزات',
         'view-project': 'عرض المشروع',
-        
+
         // Testimonials
         'testimonials-label': 'آراء العملاء',
         'testimonials-heading': 'ماذا يقول الناس',
@@ -399,7 +399,7 @@ const translations = {
         'testimonial-3-text': '🚀 قريباً! مستعدة لتقديم نتائج استثنائية لمشروعك. تواصل معي للبدء!',
         'testimonial-3-name': 'عملك',
         'testimonial-3-role': 'لنتعاون',
-        
+
         // Contact
         'contact-label': 'تواصل معي',
         'contact-heading': 'لنتحدث',
@@ -412,11 +412,11 @@ const translations = {
         'contact-name-placeholder': 'اسمك',
         'contact-email-placeholder': 'البريد الإلكتروني',
         'contact-msg-placeholder': 'أخبرني عن مشروعك...',
-        
+
         // Footer
         'footer-text': 'صممت بشغف',
         'footer-portfolios-title': '🌟 المزيد من المحافظ الملهمة',
-        
+
         // Pricing Page
         'back-home': 'العودة للرئيسية',
         'pricing-badge': '✦ أسعار شفافة',
@@ -424,7 +424,18 @@ const translations = {
         'pricing-subtitle': 'خيارات مرنة مصممة حسب احتياجاتك — من الصفحات التعريفية البسيطة إلى التطبيقات المتكاملة',
         'pricing-note-title': 'هل تحتاج حلاً مخصصاً؟',
         'pricing-note-desc': 'كل مشروع فريد. تواصل معي للحصول على عرض سعر مخصص بناءً على متطلباتك الخاصة والجدول الزمني والميزانية.',
-        'pricing-note-btn': 'لنناقش مشروعك ←'
+        'pricing-note-btn': 'لنناقش مشروعك ←',
+        // Add these to your existing translations.en object:
+        'footer-shy-title': "DON'T BE SHY!",
+        'footer-message': "Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
+        'footer-name': "S.A.",
+        'footer-role': "I'm a <strong>Front-End Developer & MERN Stack Enthusiast</strong>, passionate and dedicated to my work. I have acquired the skills and knowledge necessary to design and develop user-friendly, scalable web applications that make your project a success.",
+
+        // Add these to your existing translations.ar object:
+        'footer-shy-title': "لا تتردد!",
+        'footer-message': "لا تتردد في التواصل معي. أنا دائمًا منفتحة لمناقشة المشاريع الجديدة والأفكار الإبداعية أو فرص أن أكون جزءًا من رؤيتك.",
+        'footer-name': "س.ع.",
+        'footer-role': "أنا <strong>مطورة واجهات أمامية ومتحمسة لمكدس MERN</strong>، شغوفة ومخلصة لعملي. لقد اكتسبت المهارات والمعرفة اللازمة لتصميم وتطوير تطبيقات ويب سهلة الاستخدام وقابلة للتطوير تجعل مشروعك ناجحًا.",
     }
 };
 
@@ -446,7 +457,7 @@ function setLanguage(lang) {
             }
         }
     });
-    
+
     // Handle placeholder-only elements
     document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
         const key = el.getAttribute('data-i18n-placeholder');
@@ -523,33 +534,33 @@ const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         const formData = new FormData(contactForm);
         const msgDiv = document.getElementById('formMessage');
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
-        
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> ' + 
+
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> ' +
             (currentLang === 'en' ? 'Sending...' : 'جاري الإرسال...');
         submitBtn.disabled = true;
-        
+
         try {
             const response = await fetch(contactForm.action, {
                 method: 'POST',
                 body: formData
             });
-            
+
             if (response.ok) {
-                msgDiv.innerHTML = '<div class="alert alert-success mt-3">✓ ' + 
-                    (currentLang === 'en' ? 'Message sent successfully! I will get back to you soon. ✨' : '✓ تم إرسال الرسالة بنجاح! سأرد عليك قريباً. ✨') + 
+                msgDiv.innerHTML = '<div class="alert alert-success mt-3">✓ ' +
+                    (currentLang === 'en' ? 'Message sent successfully! I will get back to you soon. ✨' : '✓ تم إرسال الرسالة بنجاح! سأرد عليك قريباً. ✨') +
                     '</div>';
                 contactForm.reset();
             } else {
                 throw new Error('Failed');
             }
         } catch (error) {
-            msgDiv.innerHTML = '<div class="alert alert-danger mt-3">❌ ' + 
-                (currentLang === 'en' ? 'Error sending message. Please email me directly at salma_amr200311@yahoo.com' : '❌ خطأ في إرسال الرسالة. يرجى التواصل عبر البريد الإلكتروني مباشرة salma_amr200311@yahoo.com') + 
+            msgDiv.innerHTML = '<div class="alert alert-danger mt-3">❌ ' +
+                (currentLang === 'en' ? 'Error sending message. Please email me directly at salma_amr200311@yahoo.com' : '❌ خطأ في إرسال الرسالة. يرجى التواصل عبر البريد الإلكتروني مباشرة salma_amr200311@yahoo.com') +
                 '</div>';
         } finally {
             submitBtn.innerHTML = originalText;
@@ -580,10 +591,10 @@ if (phoneLink) {
     phoneLink.addEventListener('click', (e) => {
         e.preventDefault();
         const phoneNumber = '+201060431949';
-        const confirmMessage = currentLang === 'en' 
-            ? `Would you like to call ${phoneNumber}?` 
+        const confirmMessage = currentLang === 'en'
+            ? `Would you like to call ${phoneNumber}?`
             : `هل تريد الاتصال بـ ${phoneNumber}؟`;
-        
+
         if (confirm(confirmMessage)) {
             window.location.href = `tel:${phoneNumber}`;
         }
@@ -594,8 +605,8 @@ if (whatsappLink) {
     whatsappLink.addEventListener('click', (e) => {
         e.preventDefault();
         const phoneNumber = '201060431949';
-        const message = encodeURIComponent(currentLang === 'en' 
-            ? 'Hello Salma! I would like to discuss a project with you.' 
+        const message = encodeURIComponent(currentLang === 'en'
+            ? 'Hello Salma! I would like to discuss a project with you.'
             : 'مرحباً سلمى! أود مناقشة مشروع معك.');
         window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
     });
@@ -606,10 +617,10 @@ if (emailLink) {
         e.preventDefault();
         const email = 'salma_amr200311@yahoo.com';
         const subject = encodeURIComponent(currentLang === 'en' ? 'Project Inquiry' : 'استفسار عن مشروع');
-        const body = encodeURIComponent(currentLang === 'en' 
-            ? 'Hello Salma,\n\nI would like to discuss a project with you.\n\nBest regards,' 
+        const body = encodeURIComponent(currentLang === 'en'
+            ? 'Hello Salma,\n\nI would like to discuss a project with you.\n\nBest regards,'
             : 'مرحباً سلمى،\n\nأود مناقشة مشروع معك.\n\nمع التحية،');
-        
+
         window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
     });
 }
